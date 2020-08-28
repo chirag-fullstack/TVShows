@@ -1,0 +1,88 @@
+PODS:
+  - Bolts/Tasks (1.9.1)
+  - MaterialComponents/AnimationTiming (111.0.0)
+  - MaterialComponents/Availability (111.0.0)
+  - MaterialComponents/Buttons (111.0.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/Ink
+    - MaterialComponents/private/Math
+    - MaterialComponents/Ripple
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+    - MaterialComponents/Typography
+    - MDFInternationalization
+    - MDFTextAccessibility
+  - MaterialComponents/Elevation (111.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/Ink (111.0.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Application (111.0.0)
+  - MaterialComponents/private/Color (111.0.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/Math (111.0.0)
+  - MaterialComponents/Ripple (111.0.0):
+    - MaterialComponents/AnimationTiming
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/ShadowElevations (111.0.0)
+  - MaterialComponents/ShadowLayer (111.0.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (111.0.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (111.0.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialComponents/Typography (111.0.0):
+    - MaterialComponents/private/Application
+    - MaterialComponents/private/Math
+    - MDFTextAccessibility
+  - MDFInternationalization (2.0.0)
+  - MDFTextAccessibility (2.0.0)
+  - Nuke (9.1.1)
+  - Parse (1.18.0):
+    - Parse/Core (= 1.18.0)
+  - Parse/Core (1.18.0):
+    - Bolts/Tasks (= 1.9.1)
+  - ProgressHUD (13.4)
+  - SwiftLint (0.40.0)
+
+DEPENDENCIES:
+  - MaterialComponents/Buttons
+  - Nuke
+  - Parse
+  - ProgressHUD
+  - SwiftLint
+
+SPEC REPOS:
+  trunk:
+    - Bolts
+    - MaterialComponents
+    - MDFInternationalization
+    - MDFTextAccessibility
+    - Nuke
+    - Parse
+    - ProgressHUD
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  MaterialComponents: 533042da998b97ad13a6f544268f8026e8161cc5
+  MDFInternationalization: 010097556d6b09d2c4ea38e0820ea6d37be6a314
+  MDFTextAccessibility: 85c09a1bd9c321f494348e632a25063bcda35a53
+  Nuke: af4301b154d3afd8a3b045a5194a9a773a00b7a8
+  Parse: 79bdda34fdb7eb2a707a43a951c8aae236cb3e34
+  ProgressHUD: 137a7fc677487c5581668f4490563124fb35c232
+  SwiftLint: 4154893c73a4c52d6240195507eb7a3e3c64087e
+
+PODFILE CHECKSUM: 830008103b350818551a11b10236c023e94cfb0d
+
+COCOAPODS: 1.9.3
