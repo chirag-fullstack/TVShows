@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="TVShowCollectionViewCell" id="gTV-IL-0wX" customClass="TVShowCollectionViewCell" customModule="TVShows" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="182" height="181"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="182" height="181"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ryk-TU-1AK">
+                        <rect key="frame" x="0.0" y="0.0" width="182" height="181"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H6Z-7Z-ZLD">
+                        <rect key="frame" x="25" y="144" width="132" height="21"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="H6Z-7Z-ZLD" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="25" id="0hV-tS-Pgn"/>
+                <constraint firstItem="Ryk-TU-1AK" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="EYk-rd-27l"/>
+                <constraint firstItem="Ryk-TU-1AK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="PYj-yg-vii"/>
+                <constraint firstItem="Ryk-TU-1AK" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="a6y-ZT-W4D"/>
+                <constraint firstItem="H6Z-7Z-ZLD" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="fGW-W3-YNB"/>
+                <constraint firstItem="Ryk-TU-1AK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="hKE-Wf-WbJ"/>
+                <constraint firstAttribute="bottom" secondItem="H6Z-7Z-ZLD" secondAttribute="bottom" constant="16" id="l6s-f2-qhs"/>
+            </constraints>
+            <size key="customSize" width="182" height="181"/>
+            <connections>
+                <outlet property="slideImageView" destination="Ryk-TU-1AK" id="jkM-e7-wHf"/>
+                <outlet property="slideTitle" destination="H6Z-7Z-ZLD" id="XvU-wg-PZD"/>
+            </connections>
+            <point key="canvasLocation" x="-116" y="-15"/>
+        </collectionViewCell>
+    </objects>
+</document>

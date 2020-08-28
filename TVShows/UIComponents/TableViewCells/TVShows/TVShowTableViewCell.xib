@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TVShowTableViewCell" rowHeight="150" id="x0w-2Z-7UK" customClass="TVShowTableViewCell" customModule="TVShows" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="x0w-2Z-7UK" id="mw9-JE-TzR">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MzA-WX-hUD" customClass="ShadowView" customModule="TVShows" customModuleProvider="target">
+                        <rect key="frame" x="25" y="12" width="364" height="76"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PLd-1w-43h" customClass="RoundedView" customModule="TVShows" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="364" height="76"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8wr-x3-DlF">
+                                        <rect key="frame" x="16" y="12" width="332" height="52"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="gyZ-XC-zcw">
+                                                <rect key="frame" x="0.0" y="0.0" width="332" height="36.5"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="cbA-UJ-9LS">
+                                                        <rect key="frame" x="0.0" y="0.0" width="166" height="21.5"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vCb-In-Nxo" customClass="RoundedButton" customModule="TVShows" customModuleProvider="target">
+                                                        <rect key="frame" x="166" y="0.0" width="166" height="36.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="Cle-yw-VOK">
+                                                                <rect key="frame" x="12" y="8" width="142" height="20.5"/>
+                                                                <color key="backgroundColor" red="0.94901960784313721" green="0.96078431372549022" blue="0.98039215686274506" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                                <color key="textColor" red="0.42352941176470588" green="0.44705882352941173" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                                                <userDefinedRuntimeAttributes>
+                                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                        <integer key="value" value="10"/>
+                                                                    </userDefinedRuntimeAttribute>
+                                                                </userDefinedRuntimeAttributes>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" red="0.94901960784313721" green="0.96078431372549022" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <constraints>
+                                                            <constraint firstItem="Cle-yw-VOK" firstAttribute="centerX" secondItem="vCb-In-Nxo" secondAttribute="centerX" id="2Ou-jG-mdm"/>
+                                                            <constraint firstItem="Cle-yw-VOK" firstAttribute="centerY" secondItem="vCb-In-Nxo" secondAttribute="centerY" id="CAe-ST-CmH"/>
+                                                            <constraint firstItem="Cle-yw-VOK" firstAttribute="leading" secondItem="vCb-In-Nxo" secondAttribute="leading" constant="12" id="K9k-az-kKc"/>
+                                                            <constraint firstItem="Cle-yw-VOK" firstAttribute="top" secondItem="vCb-In-Nxo" secondAttribute="top" constant="8" id="RhD-N8-QYj"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999998807907104" translatesAutoresizingMaskIntoConstraints="NO" id="csI-RD-azf">
+                                                <rect key="frame" x="0.0" y="40.5" width="332" height="11.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.42352941176470588" green="0.44705882352941173" blue="0.50196078431372548" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="0.0"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="8wr-x3-DlF" firstAttribute="leading" secondItem="PLd-1w-43h" secondAttribute="leading" constant="16" id="6YP-LJ-MeL"/>
+                                    <constraint firstItem="8wr-x3-DlF" firstAttribute="centerY" secondItem="PLd-1w-43h" secondAttribute="centerY" id="ETN-wO-FWc"/>
+                                    <constraint firstItem="8wr-x3-DlF" firstAttribute="top" secondItem="PLd-1w-43h" secondAttribute="top" constant="12" id="SbT-Xu-Zey"/>
+                                    <constraint firstItem="8wr-x3-DlF" firstAttribute="centerX" secondItem="PLd-1w-43h" secondAttribute="centerX" id="saa-WY-7Xr"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="PLd-1w-43h" firstAttribute="leading" secondItem="MzA-WX-hUD" secondAttribute="leading" id="3xt-IS-PhD"/>
+                            <constraint firstItem="PLd-1w-43h" firstAttribute="centerX" secondItem="MzA-WX-hUD" secondAttribute="centerX" id="Dkz-zD-UV1"/>
+                            <constraint firstItem="PLd-1w-43h" firstAttribute="top" secondItem="MzA-WX-hUD" secondAttribute="top" id="Ft1-dy-y5t"/>
+                            <constraint firstItem="PLd-1w-43h" firstAttribute="centerY" secondItem="MzA-WX-hUD" secondAttribute="centerY" id="pzv-Hq-aqy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="MzA-WX-hUD" firstAttribute="centerX" secondItem="mw9-JE-TzR" secondAttribute="centerX" id="AaM-nu-ShG"/>
+                    <constraint firstItem="MzA-WX-hUD" firstAttribute="leading" secondItem="mw9-JE-TzR" secondAttribute="leading" constant="25" id="IIF-sj-qA4"/>
+                    <constraint firstItem="MzA-WX-hUD" firstAttribute="centerY" secondItem="mw9-JE-TzR" secondAttribute="centerY" id="Lg6-FS-Nk7"/>
+                    <constraint firstItem="MzA-WX-hUD" firstAttribute="top" secondItem="mw9-JE-TzR" secondAttribute="top" constant="12" id="S2j-3u-4Lb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="seasonsLabel" destination="csI-RD-azf" id="EhQ-8R-lwa"/>
+                <outlet property="titleLabel" destination="cbA-UJ-9LS" id="i2P-Ni-hz7"/>
+                <outlet property="yearLabel" destination="Cle-yw-VOK" id="ARJ-LS-me6"/>
+            </connections>
+            <point key="canvasLocation" x="-594.20289855072474" y="-8.0357142857142847"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -30,14 +30,46 @@
                     <view key="view" contentMode="scaleToFill" id="DYV-zk-cdW">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SqJ-NJ-Mnn" customClass="BaseTableView" customModule="TVShows" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="nzI-Hx-O29" id="ctE-A2-Ijw"/>
+                                </connections>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lti-ab-KNd" customClass="MDCFloatingButton">
+                                <rect key="frame" x="281" y="573" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.28235294117647058" green="0.50980392156862742" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="lti-ab-KNd" secondAttribute="height" multiplier="1:1" id="KPN-Tu-anG"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="plus" catalog="system"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="lti-ab-KNd" firstAttribute="width" secondItem="DYV-zk-cdW" secondAttribute="width" multiplier="0.133333" id="0dd-FO-LVo"/>
+                            <constraint firstItem="1qd-1R-uJw" firstAttribute="trailing" secondItem="lti-ab-KNd" secondAttribute="trailing" constant="44" id="7WH-AA-j7R"/>
+                            <constraint firstItem="SqJ-NJ-Mnn" firstAttribute="top" secondItem="1qd-1R-uJw" secondAttribute="top" id="ADi-ia-dv2"/>
+                            <constraint firstItem="SqJ-NJ-Mnn" firstAttribute="centerX" secondItem="DYV-zk-cdW" secondAttribute="centerX" id="QdI-Fi-rvj"/>
+                            <constraint firstItem="1qd-1R-uJw" firstAttribute="bottom" secondItem="SqJ-NJ-Mnn" secondAttribute="bottom" id="Se2-vV-V8i"/>
+                            <constraint firstItem="1qd-1R-uJw" firstAttribute="bottom" secondItem="lti-ab-KNd" secondAttribute="bottom" constant="44" id="uOq-o2-okl"/>
+                            <constraint firstItem="SqJ-NJ-Mnn" firstAttribute="leading" secondItem="1qd-1R-uJw" secondAttribute="leading" id="v2U-Qe-uyX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="1qd-1R-uJw"/>
                     </view>
                     <navigationItem key="navigationItem" title="TV Shows" id="efA-WY-Tra"/>
+                    <connections>
+                        <outlet property="tvShowTableView" destination="SqJ-NJ-Mnn" id="b5A-UX-1Y9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URn-6y-9EJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="221.59999999999999" y="146.17691154422789"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="plus" catalog="system" width="128" height="113"/>
+    </resources>
 </document>
