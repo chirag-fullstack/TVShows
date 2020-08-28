@@ -45,6 +45,9 @@
                                 </constraints>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="plus" catalog="system"/>
+                                <connections>
+                                    <segue destination="1YD-SE-rUc" kind="presentation" id="EeA-F7-J8a"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -67,6 +70,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URn-6y-9EJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="221.59999999999999" y="146.17691154422789"/>
+        </scene>
+        <!--AddTVShow-->
+        <scene sceneID="8dn-bZ-QRA">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddTVShow" id="1YD-SE-rUc" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="paH-Ys-TRa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="27"/>
         </scene>
     </scenes>
     <resources>

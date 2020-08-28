@@ -26,6 +26,16 @@ class HomeVC: UIViewController {
         self.setupTableView()
     }
 
+    // MARK: Segues
+
+     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         guard let controller = segue.destination as? AddTVShowVC else { return }
+
+         controller.onShowSaveSuccess = { [weak self] show in
+             self?.presenter.appendTvShows(tvShow: show)
+         }
+     }
+
     // MARK: Helper Methods
 
     fileprivate func setupTableView() {

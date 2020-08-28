@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pSH-Vs-VVH">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AddTV ShowVC-->
+        <scene sceneID="mnz-bI-EeP">
+            <objects>
+                <viewController storyboardIdentifier="AddTVShowVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="pSH-Vs-VVH" customClass="AddTVShowVC" customModule="TVShows" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cG1-J5-HQP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="of8-fl-h5p">
+                                <rect key="frame" x="0.0" y="-3" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Add Show" id="Tzf-5h-1c9">
+                                        <barButtonItem key="leftBarButtonItem" title="Item" image="xmark" catalog="system" id="He7-AP-prz">
+                                            <color key="tintColor" red="0.28235294119999998" green="0.50980392159999999" blue="0.93333333330000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <connections>
+                                                <action selector="cancel" destination="pSH-Vs-VVH" id="de8-UO-cLQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4fd-ui-VGj">
+                                <rect key="frame" x="25" y="81" width="325" height="153.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Title of TV Show" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QrP-rd-ctY" customClass="BorderedTextField" customModule="TVShows" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="325" height="40.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year of release" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BHS-Xz-TKL" customClass="BorderedTextField" customModule="TVShows" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="56.5" width="325" height="40.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Number of seasons" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UwQ-2d-YFq" customClass="BorderedTextField" customModule="TVShows" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="113" width="325" height="40.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AP5-JR-L4b" customClass="RoundedButton" customModule="TVShows" customModuleProvider="target">
+                                <rect key="frame" x="25" y="274.5" width="325" height="50"/>
+                                <color key="backgroundColor" red="0.28235294117647058" green="0.50980392156862742" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Save">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="saveButtonClicked" destination="pSH-Vs-VVH" eventType="touchUpInside" id="NGb-q2-WDv"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4fd-ui-VGj" firstAttribute="top" secondItem="of8-fl-h5p" secondAttribute="bottom" constant="40" id="9Uw-oT-Plb"/>
+                            <constraint firstItem="of8-fl-h5p" firstAttribute="trailing" secondItem="hH9-75-XMa" secondAttribute="trailing" id="Gkj-dD-aO4"/>
+                            <constraint firstItem="hH9-75-XMa" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="AP5-JR-L4b" secondAttribute="bottom" constant="20" id="KJ4-Ip-Qf0"/>
+                            <constraint firstItem="of8-fl-h5p" firstAttribute="leading" secondItem="hH9-75-XMa" secondAttribute="leading" id="MXq-SP-drd"/>
+                            <constraint firstItem="AP5-JR-L4b" firstAttribute="top" secondItem="4fd-ui-VGj" secondAttribute="bottom" constant="40" id="MyK-po-RJ6"/>
+                            <constraint firstItem="4fd-ui-VGj" firstAttribute="height" secondItem="cG1-J5-HQP" secondAttribute="height" multiplier="0.23" id="Np8-VR-hVS"/>
+                            <constraint firstItem="AP5-JR-L4b" firstAttribute="centerX" secondItem="cG1-J5-HQP" secondAttribute="centerX" id="Tqh-Zj-fzE"/>
+                            <constraint firstItem="AP5-JR-L4b" firstAttribute="leading" secondItem="hH9-75-XMa" secondAttribute="leading" constant="25" id="bZC-ly-7zn"/>
+                            <constraint firstItem="AP5-JR-L4b" firstAttribute="height" secondItem="cG1-J5-HQP" secondAttribute="height" multiplier="0.075" id="ea7-aW-vgA"/>
+                            <constraint firstItem="4fd-ui-VGj" firstAttribute="centerX" secondItem="hH9-75-XMa" secondAttribute="centerX" id="gCG-9m-E4b"/>
+                            <constraint firstItem="4fd-ui-VGj" firstAttribute="leading" secondItem="hH9-75-XMa" secondAttribute="leading" constant="25" id="ozU-Hn-3RW"/>
+                            <constraint firstItem="hH9-75-XMa" firstAttribute="top" secondItem="of8-fl-h5p" secondAttribute="top" constant="3" id="xTp-Mt-1kA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hH9-75-XMa"/>
+                    </view>
+                    <connections>
+                        <outlet property="saveButton" destination="AP5-JR-L4b" id="L1n-VQ-dkL"/>
+                        <outlet property="seasonsTextField" destination="UwQ-2d-YFq" id="apC-lC-XSO"/>
+                        <outlet property="titleTextField" destination="QrP-rd-ctY" id="crS-2H-TXp"/>
+                        <outlet property="yearTextField" destination="BHS-Xz-TKL" id="iE7-pT-YLw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X67-85-AsD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-84" y="165"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>
