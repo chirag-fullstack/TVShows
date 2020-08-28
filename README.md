@@ -1,12 +1,12 @@
 ## Overview
-This is a TV show manager application with with 2 screens. First screen displays a list of all the TV shows added by the user with swipe to delete functionality and the Other screen allows the user to add a TV show. 
+This is a TV show manager application with with 2 screens. The first screen displays a list of all the TV shows added by the user with swipe to delete functionality and the Other screen allows the user to add a TV show. 
 
 The app is utilising:
 - `Parse` cloud service as a backend
-- `MVP design pattern` to assure testabilty of the code
+- `MVP design pattern` to assure testability of the code
 - `Protocols` for services like `CloudStoreService` for better scalability
-- `Switflint` to enfore the standards of coding
-- `UITableView` to display list of all the TV shows
+- `Switflint` to enforce the standards of coding
+- `UITableView` to display a list of all the TV shows
 
 ## Code Structure
 ```
@@ -86,7 +86,7 @@ This is to keep all the code that will be used as a utility for the app. It also
 - The new combine framework can also be used for cleaner code
 - TableView is used as the main component for `Home` to make it scalable
 - Carousel for shows and swipe to delete has been added as the additional functionalities
-- 
+- `parseCredentials.json` has been committed to make the compile. Client secrets should not be committed and shared via source control management 
 
 ## Build Info
 - iOS 13.0+
